@@ -1,23 +1,19 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const items = document.querySelectorAll(
+    ".hero-text, .hero-image-card, .section, .card, .product-section, .quote-box, .cta"
+  );
 
-const elements = document.querySelectorAll("section, .card");
+  items.forEach(item => item.classList.add("fade"));
 
-const observer = new IntersectionObserver(entries => {
+  const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-        if(entry.isIntersecting){
-            entry.target.style.opacity = "1";
-            entry.target.style.transform = "translateY(0)";
-        }
+      if (entry.isIntersecting) {
+        entry.target.classList.add("show");
+      }
     });
-},{
-    threshold:0.15
-});
+  }, {
+    threshold: 0.15
+  });
 
-elements.forEach(el=>{
-    el.style.opacity="0";
-    el.style.transform="translateY(40px)";
-    el.style.transition="all 0.8s ease";
-    observer.observe(el);
-});
-
+  items.forEach(item => observer.observe(item));
 });
