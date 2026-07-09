@@ -1,11 +1,9 @@
 document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll(
-    ".hero-text, .hero-card, .features, .feature-card, .product, .video, .cta"
+    ".hero-text, .hero-image, .intro, .collection, .gallery img, .tracker, .story, .video, .cta"
   );
 
-  elements.forEach(element => {
-    element.classList.add("fade");
-  });
+  elements.forEach(el => el.classList.add("reveal"));
 
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -13,11 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
         entry.target.classList.add("show");
       }
     });
-  }, {
-    threshold: 0.15
-  });
+  }, { threshold: 0.15 });
 
-  elements.forEach(element => {
-    observer.observe(element);
-  });
+  elements.forEach(el => observer.observe(el));
 });
