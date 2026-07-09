@@ -4,112 +4,126 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>LensMate</title>
-
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-  <nav class="navbar">
-    <div class="brand">
-      <img src="logo.png" alt="LensMate logo">
-      <span>LensMate</span>
-    </div>
-
-    <div class="nav-links">
-      <a href="#features">Features</a>
-      <a href="#product">Product</a>
-      <a href="#video">Video</a>
-      <a href="#contact">Contact</a>
-    </div>
+<header class="nav">
+  <a class="brand" href="#">LensMate</a>
+  <nav>
+    <a href="#collection">Collection</a>
+    <a href="#tracker">Tracker</a>
+    <a href="#story">Story</a>
+    <a href="#video">Video</a>
   </nav>
+</header>
 
-  <section class="hero">
-    <div class="hero-text">
-      <p class="eyebrow">Cute. Chic. Trackable.</p>
+<section class="hero">
+  <div class="hero-text">
+    <p class="label">Cute. Chic. Trackable.</p>
+    <h1>Keep your eyewear cute and close.</h1>
+    <p>
+      LensMate is a premium eyewear charm with a hidden smart tracker — made for people who love fashion but hate losing their glasses.
+    </p>
+    <div class="buttons">
+      <a href="#collection" class="btn primary">Discover LensMate</a>
+      <a href="#tracker" class="btn secondary">Find My Glasses</a>
+    </div>
+  </div>
 
-      <h1>Never lose your glasses again — but make it cute.</h1>
+  <div class="hero-image">
+    <img src="heroimage.png" alt="LensMate model campaign">
+  </div>
+</section>
 
-      <p class="hero-subtitle">
-        LensMate is a stylish eyeglass charm with a built-in tracker, designed to keep
-        your glasses close, secure, and easy to find without compromising your look.
-      </p>
+<section class="intro">
+  <p class="label">What is LensMate?</p>
+  <h2>Jewelry for your glasses — with smart functionality.</h2>
+  <p>
+    A delicate charm that attaches to your eyewear and helps you locate your glasses when you misplace them.
+  </p>
+</section>
 
-      <div class="buttons">
-        <a href="#features" class="btn pink">Discover LensMate</a>
-        <a href="#video" class="btn dark">Watch Pitch</a>
+<section id="collection" class="collection">
+  <div class="section-title">
+    <p class="label">The Collection</p>
+    <h2>Designed like fine jewelry.</h2>
+  </div>
+
+  <div class="gallery">
+    <img src="product%20hero.png" alt="LensMate product hero">
+    <img src="collecionimage.png" alt="LensMate collection">
+    <img src="Close-up%20detail.png" alt="LensMate close up detail">
+  </div>
+</section>
+
+<section id="tracker" class="tracker">
+  <div class="tracker-text">
+    <p class="label">Smart & Secure</p>
+    <h2>Find your glasses anytime.</h2>
+    <p>
+      The hidden tracker helps you locate your glasses quickly, while the charm stays elegant and discreet.
+    </p>
+
+    <div class="features">
+      <div>
+        <h3>01</h3>
+        <p>Track your glasses when they are nearby.</p>
+      </div>
+      <div>
+        <h3>02</h3>
+        <p>Play a sound or check the last known location.</p>
+      </div>
+      <div>
+        <h3>03</h3>
+        <p>Looks like jewelry, works like smart tech.</p>
       </div>
     </div>
+  </div>
 
-    <div class="hero-card">
-      <img src="hero-lensmate.png" alt="LensMate eyewear charm">
+  <div class="phone-card">
+    <div class="phone">
+      <p>LensMate</p>
+      <h3>Find My Glasses</h3>
+      <div class="circle">⌖</div>
+      <span>Your glasses are nearby</span>
+      <button>Play Sound</button>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="features" class="features">
-    <p class="eyebrow center">Why LensMate?</p>
-    <h2>Designed for people who love fashion and function.</h2>
+<section id="story" class="story">
+  <img src="Close-up%20detail.png" alt="Charm detail">
+  <div>
+    <p class="label">Why You’ll Love It</p>
+    <h2>Fashion first. Technology hidden.</h2>
+    <p>
+      LensMate is made for everyday elegance: soft pink tones, delicate charms, and a tracker that does not look technical.
+    </p>
+  </div>
+</section>
 
-    <div class="feature-grid">
-      <div class="feature-card">
-        <div class="icon">🎀</div>
-        <h3>Luxury Charm</h3>
-        <p>A feminine accessory that makes your eyewear feel elegant, personal, and unique.</p>
-      </div>
+<section id="video" class="video">
+  <p class="label">Pitch Video</p>
+  <h2>See LensMate in action.</h2>
+  <div class="video-box">
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+  </div>
+</section>
 
-      <div class="feature-card">
-        <div class="icon">📍</div>
-        <h3>Built-in Tracker</h3>
-        <p>Find your glasses faster with a discreet tracking function hidden inside the charm.</p>
-      </div>
+<section class="cta">
+  <h2>Never lose your glasses again.</h2>
+  <a href="https://calendly.com/your-link" class="btn primary">Book a Demo</a>
+</section>
 
-      <div class="feature-card">
-        <div class="icon">✨</div>
-        <h3>Elegant Look</h3>
-        <p>Soft, premium, and stylish — made to look like jewelry, not a gadget.</p>
-      </div>
-    </div>
-  </section>
+<footer>
+  <h3>LensMate</h3>
+  <p>keep your eyewear cute and close</p>
+</footer>
 
-  <section id="product" class="product">
-    <div class="product-text">
-      <p class="eyebrow">The Product</p>
-      <h2>Jewelry for your glasses — with smart functionality.</h2>
-      <p>
-        LensMate combines a stylish eyewear charm with a small tracking feature.
-        It helps users keep their glasses close while turning them into a fashionable
-        accessory for everyday life.
-      </p>
-    </div>
-  </section>
-
-  <section id="video" class="video">
-    <p class="eyebrow center">Pitch Video</p>
-    <h2>See LensMate in action.</h2>
-
-    <div class="video-box">
-      <iframe 
-        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
-        title="LensMate pitch video"
-        allowfullscreen>
-      </iframe>
-    </div>
-  </section>
-
-  <section id="contact" class="cta">
-    <h2>Ready to keep your eyewear cute and close?</h2>
-    <p>Book a short demo and discover the LensMate concept.</p>
-    <a href="https://calendly.com/your-link" class="btn pink">Book a Demo</a>
-  </section>
-
-  <footer>
-    <h3>LensMate</h3>
-    <p>Keep your eyewear cute, close, and easy to find.</p>
-  </footer>
-
-  <script src="script.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
