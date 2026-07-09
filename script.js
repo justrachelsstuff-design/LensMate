@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   const elements = document.querySelectorAll(
-    ".hero-text, .hero-image, .intro, .collection, .gallery img, .tracker, .story, .video, .cta"
+    ".hero-content, .hero-image, .intro, .collection, .collection-grid img, .tracker, .details, .features div, .video, .cta"
   );
 
   elements.forEach(el => el.classList.add("reveal"));
